@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="yourstyle" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorHighlight">#FF4F4F</item>
+        <item name="android:textColorHint">#7E2F2F</item>
+    </style>
+
+</resources>

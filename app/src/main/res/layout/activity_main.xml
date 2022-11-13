@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/appbar"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        app:titleTextAppearance="@style/ToolbarTheme"
+        app:title="Hello"
+        android:layout_gravity="center"
+        app:titleCentered="true"
+        android:background="@drawable/corner"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Enter Table number For Speak"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_table"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="100dp"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="Enter table of "
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="10dp"
+            android:layout_weight="1.5"
+            android:inputType="number"
+            android:hint="Enter"
+            android:minHeight="48dp"
+            android:outlineSpotShadowColor="#FF2828"
+            android:textColor="@color/black"
+            android:textColorHint="#78909C"
+            android:textSize="24sp"
+            tools:targetApi="p"
+            android:autofillHints="" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100sp"
+        android:layout_marginEnd="100sp"
+        android:layout_marginBottom="250dp"
+        android:padding="10sp"
+        android:text="Show Table" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/bwave"
+        android:rotation="180"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="0.6"
+        android:layout_marginTop="320sp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
